@@ -1,0 +1,16 @@
+node_modules
+
+#Hardhat files
+cache
+artifacts
+
+secrets.json
+uniswap/*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

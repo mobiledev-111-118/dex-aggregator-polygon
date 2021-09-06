@@ -1,0 +1,44 @@
+{
+  "name": "safemoonswap-core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "deploy:test_token": "npx hardhat run scripts/deploy_test_wmatic.js --network testnet",
+    "deploy:main_token": "npx hardhat run scripts/deploy_factory.js --network mainnet",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "help": "npx hardhat help",
+    "make:node": "node scripts/sample-script.js",
+    "verify:prod": "npx hardhat verify --network mainnet --constructor-args arguments.js DEPLOYED_CONTRACT_ADDRESS",
+    "lint": "yarn prettier ./test/*.ts --check",
+    "lint:fix": "yarn prettier ./test/*.ts --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethereumjs-util": "^7.1.0",
+    "ethers": "^5.4.3",
+    "hardhat": "^2.5.0",
+    "mocha": "^9.0.3",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "solc": "^0.8.6",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/contracts-upgradeable": "^4.2.0",
+    "@openzeppelin/test-helpers": "^0.5.12"
+  }
+}
